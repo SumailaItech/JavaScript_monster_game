@@ -218,6 +218,17 @@ function showLogs(){
     // for(let i = 0;i < 3; i++){
     //   console.log('------------------');
     // }
+    let j = 0;
+    do{
+        console.log(j)
+        j++;
+    }while(j < 3);
+
+    let j = 0;
+    while(j < 3){
+        console.log(j)
+        j++;
+    }
  let i = 0;
     for(const logEntry of battleLog){
         console.log(`#${i}`);
