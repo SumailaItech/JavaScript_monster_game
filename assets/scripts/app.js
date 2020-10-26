@@ -219,9 +219,15 @@ function showLogs(){
     // for(let i = 0;i < 3; i++){
     //   console.log('------------------');
     // }
-    let j = 3;
-    do{
-        console.log(j)
+    let j = 0;
+   outterWhile: do{
+        console.log("Outer   " + j);
+        innerFor: for(let k =0; k < 5; k++){
+            if(k === 3){
+                break outterWhile;
+            }
+            console.log("Inner   " + k);
+        }
         j++;
     }while(j < 3);
 
