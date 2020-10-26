@@ -28,9 +28,12 @@ let chosenMaxLife;
 try{
    chosenMaxLife = getMaxLifeValue();
 }catch(error){
-    console.log(error);
-    chosenMaxLife = 100;
-    alert("You entered something wrong,so the default value of 100 is used")
+  console.log(error);
+  chosenMaxLife = 100;
+  alert("You entered something wrong,so the default value of 100 is used");
+  //throw error;
+}finally{
+   
 }
 
 let currentMonsterHealth = chosenMaxLife;
