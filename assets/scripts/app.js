@@ -215,6 +215,9 @@ function healPlayerHandler(){
 }
 
 function showLogs(){
+    for(let i = 0;i < 3; i++){
+      console.log('------------------');
+    }
    console.log(battleLog);
 }
 attackBtn.addEventListener('click', attackHandler);
